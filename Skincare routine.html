@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitney’s Hearthside Skin Ritual</title>
+    <style>
+        :root {
+            --earth-green: #6B705C;
+            --moss: #A5A58D;
+            --sand: #DDBEA9;
+            --navy: #1B263B; /* Inspired by your bedroom wall */
+            --wood-tone: #CB997E;
+            --off-white: #F8F9FA;
+        }
+
+        body {
+            background-color: var(--off-white);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--earth-green);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            background-image: radial-gradient(var(--sand) 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(107, 112, 92, 0.1);
+            max-width: 500px;
+            width: 100%;
+            border: 1px solid var(--sand);
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            text-align: center;
+            color: var(--earth-green);
+            margin-bottom: 5px;
+        }
+
+        p.subtitle {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 30px;
+            color: var(--moss);
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            border-bottom: 2px solid var(--sand);
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: var(--navy);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .routine-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            transition: all 0.3s ease;
+        }
+
+        .routine-item:last-child { border-bottom: none; }
+
+        input[type="checkbox"] {
+            appearance: none;
+            width: 22px;
+            height: 22px;
+            border: 2px solid var(--moss);
+            border-radius: 6px;
+            margin-right: 15px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        input[type="checkbox"]:checked {
+            background-color: var(--wood-tone);
+            border-color: var(--wood-tone);
+        }
+
+        input[type="checkbox"]:checked::after {
+            content: '✓';
+            position: absolute;
+            color: white;
+            font-size: 14px;
+            left: 4px;
+            top: 0px;
+        }
+
+        input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+            color: var(--moss);
+        }
+
+        label {
+            cursor: pointer;
+            font-size: 1rem;
+            flex-grow: 1;
+        }
+
+        .brand-tag {
+            font-size: 0.75rem;
+            background: var(--sand);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-left: 10px;
+            text-decoration: none !important;
+        }
+
+        .reset-btn {
+            margin-top: 30px;
+            background: var(--earth-green);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        .reset-btn:hover { opacity: 0.8; }
+
+        .cat-corner {
+            font-size: 0.8rem;
+            text-align: center;
+            margin-top: 20px;
+            color: var(--moss);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Hearthside Ritual</h1>
+    <p class="subtitle">Romanticizing the mundane, one drop at a time.</p>
+
+    <div class="section-title">Morning <span>☀️</span></div>
+    
+    <div class="routine-item">
+        <input type="checkbox" id="am1">
+        <label for="am1">Cleanse or Rinse <span class="brand-tag">YTTP Superfood</span></label>
+    </div>
+    
+    <div class="routine-item">
+        <input type="checkbox" id="am2">
+        <label for="am2">Balance Mist <span class="brand-tag">BYOMA Mist</span></label>
+    </div>
+
+    <div class="routine-item">
+        <input type="checkbox" id="am3">
+        <label for="am3">Hydrate & Plump <span class="brand-tag">BYOMA Serum</span></label>
+    </div>
+
+    <div class="routine-item">
+        <input type="checkbox" id="am4">
+        <label for="am4">Moisturize <span class="brand-tag">Bubble Cloud Surf</span></label>
+    </div>
+
+    <div class="routine-item">
+        <input type="checkbox" id="am5">
+        <label for="am5">Protect <span class="brand-tag">Haruharu SPF</span></label>
+    </div>
+
+    <div class="section-title">Evening <span>🌙</span></div>
+
+    <div class="routine-item">
+        <input type="checkbox" id="pm1">
+        <label for="pm1">Micellar Water or Cleansing Balm <span class="brand-tag">Target-Direct</span></label>
+    </div>
+
+    <div class="routine-item">
+        <input type="checkbox" id="pm2">
+        <label for="pm2">Second Cleanse <span class="brand-tag">YTTP Superfood</span></label>
+    </div>
+
+    <div class="routine-item">
+        <input type="checkbox" id="pm3">
+        <label for="pm3">BHA Treatment <span class="brand-tag">Minimalist</span></label>
+    </div>
+
+    <div class="routine-item">
+        <input type="checkbox" id="pm4">
+        <label for="pm4">Centella Ampoule <span class="brand-tag">SKIN1004</span></label>
+    </div>
+
+    <div class="routine-item">
+        <input type="checkbox" id="pm5">
+        <label for="pm5">Hydrate <span class="brand-tag">BYOMA Serum</span></label>
+    </div>
+
+    <div class="routine-item">
+        <input type="checkbox" id="pm6">
+        <label for="pm6">Barrier Seal <span class="brand-tag">Bubble Cloud Surf</span></label>
+    </div>
+
+    <button class="reset-btn" onclick="resetRoutine()">Reset for Tomorrow</button>
+
+    <div class="cat-corner">
+        Say hi to Roux & Koda before bed! 🐾
+    </div>
+</div>
+
+<script>
+    // Load saved states when the page loads
+    document.addEventListener('DOMContentLoaded', () => {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(cb => {
+            // Get the saved value from localStorage
+            const savedState = localStorage.getItem(cb.id);
+            // If it was saved as 'true', check the box
+            if (savedState === 'true') {
+                cb.checked = true;
+            }
+
+            // Add an event listener to save changes in real-time
+            cb.addEventListener('change', () => {
+                localStorage.setItem(cb.id, cb.checked);
+            });
+        });
+    });
+
+    // Clear everything back to unchecked
+    function resetRoutine() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(cb => {
+            cb.checked = false;
+            localStorage.setItem(cb.id, false);
+        });
+    }
+</script>
+
+</body>
+</html>
